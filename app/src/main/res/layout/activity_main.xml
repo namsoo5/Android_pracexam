@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="InputForm" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_span="3"
+                android:id="@+id/rginput">
+
+                <RadioButton
+                    android:id="@+id/rbinput1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Input"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rbinput2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Input1 and 2" />
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvinput1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input1"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_span="3"
+                android:imeOptions="actionDone"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trhide"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvinput2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input2"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="pw"
+                android:layout_span="2"
+                android:imeOptions="actionDone"/>
+
+            <CheckBox
+                android:id="@+id/cbsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:layout_column="2"/>
+
+            <Button
+                android:id="@+id/btcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보고싶은 버튼 클릭"
+        android:textColor="#AA44DD" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rgview">
+
+        <RadioButton
+            android:id="@+id/rbtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show Text" />
+
+        <RadioButton
+            android:id="@+id/rbimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show Image" />
+
+    </RadioGroup>
+
+</LinearLayout>
